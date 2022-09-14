@@ -1,0 +1,51 @@
+name: m3u8_browser
+description: A mobile browser application capable of tracking and displaying
+  hls/m3u8 video feeds from it, the user has various options for manipulating
+  the video.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0-154.0.dev <3.0.0'
+
+dependencies:
+  cached_network_image: ^3.2.2
+  chewie: ^1.3.5
+  cupertino_icons: ^1.0.2
+  cupertino_will_pop_scope: ^1.2.1
+  dio: ^4.0.6
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_downloader: ^1.8.3+2
+  flutter_inappwebview: ^5.4.3+7
+  get: ^4.6.5
+  go_router: ^4.4.1
+  icons_plus: ^3.0.0
+  in_app_update: ^3.0.0
+  m3u8_downloader:
+    git:
+      url: https://github.com/lytian/m3u8_downloader.git
+  mime: ^1.0.2
+  modal_bottom_sheet: ^2.1.2
+  open_filex: ^4.1.1
+  path_provider: ^2.0.11
+  permission_handler: ^10.0.0
+  responsive_framework: ^0.2.0
+  url_launcher: ^6.1.5
+  volume_controller: ^2.0.4
+  wakelock: ^0.6.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - secret_key.json
